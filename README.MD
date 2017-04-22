@@ -8,15 +8,9 @@ To install this library, run:
 $ npm install ngx-konami --save
 ```
 
-## Consuming your library
+## Getting started
 
-Once you have published your library to npm, you can import your library in any Angular application by running:
-
-```bash
-$ npm install ngx-konami
-```
-
-and then from your Angular `AppModule`:
+Once you have published your library to npm, you can import your library in any Angular application :
 
 ```typescript
 import { BrowserModule } from '@angular/platform-browser';
@@ -24,8 +18,8 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
-// Import your library
-import { SampleModule } from 'ngx-konami';
+// Import the library
+import { KonamiModule } from 'ngx-konami';
 
 @NgModule({
   declarations: [
@@ -34,8 +28,8 @@ import { SampleModule } from 'ngx-konami';
   imports: [
     BrowserModule,
 
-    // Specify your library as an import
-    LibraryModule
+    // Specify KonamiModule as an import
+    KonamiModule
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -43,17 +37,16 @@ import { SampleModule } from 'ngx-konami';
 export class AppModule { }
 ```
 
-Once your library is imported, you can use its components, directives and pipes in your Angular application:
+Once your library is imported, you can use its directive in your Angular application :
 
 ```xml
-<!-- You can now use your library component in app.component.html -->
-<h1>
-  {{title}}
-</h1>
-<sampleComponent></sampleComponent>
+<!-- You can now use the konami directive in app.component.html -->
+<div (konami)="sayHello()"></div>
 ```
 
-## Development
+The method ```sayHello``` will be called when you type the konami code !
+
+## Contribute
 
 To generate all `*.js`, `*.d.ts` and `*.metadata.json` files:
 
