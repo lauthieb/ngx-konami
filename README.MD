@@ -1,5 +1,7 @@
 # ngx-konami
 
+A simple directive to add easter eggs in your Angular 2+ application.
+
 ## Installation
 
 To install this library, run:
