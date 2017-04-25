@@ -64,4 +64,4 @@ $ npm run lint
 
 ## License
 
-MIT © [Laurent THIEBAULT](mailto:thiebault.laurent@gmail.com)
+MIT ©
