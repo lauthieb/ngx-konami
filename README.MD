@@ -1,5 +1,9 @@
 # ngx-konami
 
+[![npm](https://img.shields.io/npm/v/ngx-konami.svg)]()
+[![npm](https://img.shields.io/npm/dt/ngx-konami.svg)]()
+[![npm](https://img.shields.io/npm/l/ngx-konami.svg)]()
+
 A simple directive to add easter eggs in your Angular 2+ application.
 
 ## Installation
