@@ -14,14 +14,16 @@ export class KonamiDirective {
 
   @HostListener('document:keydown', ['$event'])
   handleKeyboardEvent(event: KeyboardEvent) {
-    this.sequence.push(event.keyCode.toString());
+    if (event.keyCode) {
+      this.sequence.push(event.keyCode.toString());
 
-    if (this.sequence.length > this.konamiCode.length) {
-      this.sequence.shift();
-    }
+      if (this.sequence.length > this.konamiCode.length) {
+        this.sequence.shift();
+      }
 
-    if (this.isKonamiCode()) {
-      this.konami.emit();
+      if (this.isKonamiCode()) {
+        this.konami.emit();
+      }
     }
   }
 
