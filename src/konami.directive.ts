@@ -12,6 +12,12 @@ export class KonamiDirective {
 
   private konamiCode: string[];
 
+  constructor() {
+    this.konami = new EventEmitter<void>();
+    this.sequence = [];
+    this.konamiCode = ['38', '38', '40', '40', '37', '39', '37', '39', '66', '65'];
+  }
+
   @HostListener('document:keydown', ['$event'])
   handleKeyboardEvent(event: KeyboardEvent) {
     if (event.keyCode) {
@@ -25,12 +31,6 @@ export class KonamiDirective {
         this.konami.emit();
       }
     }
-  }
-
-  constructor() {
-    this.konami = new EventEmitter<void>();
-    this.sequence = [];
-    this.konamiCode = ['38', '38', '40', '40', '37', '39', '37', '39', '66', '65'];
   }
 
   isKonamiCode(): boolean {

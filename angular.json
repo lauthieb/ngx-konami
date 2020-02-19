@@ -3,17 +3,18 @@
     "version": 1,
     "projects": {
         "ngx-konami": {
-        "root": "",
-        "sourceRoot": "src",
-        "projectType": "application",
-        "architect": {
-            "build": {
-                "builder": "@angular-devkit/build-angular:browser",
-                "options": {
-                    "tsConfig": "tsconfig.json"
+            "root": "projects/ngx-konami",
+            "sourceRoot": "projects/ngx-konami/src",
+            "projectType": "library",
+            "architect": {
+                "build": {
+                    "builder": "@angular-devkit/build-angular:browser",
+                    "options": {
+                        "aot": true,
+                        "tsConfig": "src/tsconfig.lib.json"
+                    }
                 }
             }
-        }
         }
     },
     "defaultProject": "ngx-konami"

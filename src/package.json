@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/lauthieb/ngx-konami/issues"
   },
-  "module": "ngx-konami.js",
+  "module": "index.js",
   "typings": "ngx-konami.d.ts",
   "peerDependencies": {
     "@angular/core": "^4.0.0",
