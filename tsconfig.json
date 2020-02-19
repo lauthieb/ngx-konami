@@ -3,7 +3,10 @@
 {
   "compilerOptions": {
     "baseUrl": "./src",
+    "downlevelIteration": true,
     "experimentalDecorators": true,
+    "importHelpers": true,
+    "module": "esnext",
     "moduleResolution": "node",
     "rootDir": "./src",
     "lib": [
@@ -11,6 +14,7 @@
       "dom"
     ],
     "skipLibCheck": true,
+    "target": "es2015",
     // Don't auto-discover @types/node, it results in a ///<reference in the .d.ts output
     "types": []
   }
