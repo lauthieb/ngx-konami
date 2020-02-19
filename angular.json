@@ -1,0 +1,20 @@
+{
+    "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+    "version": 1,
+    "projects": {
+        "ngx-konami": {
+        "root": "",
+        "sourceRoot": "src",
+        "projectType": "application",
+        "architect": {
+            "build": {
+                "builder": "@angular-devkit/build-angular:browser",
+                "options": {
+                    "tsConfig": "tsconfig.json"
+                }
+            }
+        }
+        }
+    },
+    "defaultProject": "ngx-konami"
+}
