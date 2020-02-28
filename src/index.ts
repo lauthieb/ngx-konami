@@ -16,7 +16,7 @@ export * from './konami.directive';
   ]
 })
 export class KonamiModule {
-  static forRoot(): ModuleWithProviders {
+  static forRoot(): ModuleWithProviders<KonamiModule> {
     return {
       ngModule: KonamiModule
     };

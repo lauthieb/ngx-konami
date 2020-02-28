@@ -6,7 +6,6 @@
     "target": "es5",
     "baseUrl": ".",
     "stripInternal": true,
-    "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "outDir": "../build",
@@ -24,7 +23,8 @@
     "strictMetadataEmit": true,
     "skipTemplateCodegen": true,
     "flatModuleOutFile": "ngx-konami.js",
-    "flatModuleId": "ngx-konami"
+    "flatModuleId": "ngx-konami",
+    "enableIvy": false
   },
   "files": [
     "./index.ts"
