@@ -18,7 +18,7 @@ export class KonamiDirective {
     this.konamiCode = ['38', '38', '40', '40', '37', '39', '37', '39', '66', '65'];
   }
 
-  @HostListener('document:keydown', ['$event'])
+  @HostListener('window:keydown', ['$event'])
   handleKeyboardEvent(event: KeyboardEvent) {
     if (event.keyCode) {
       this.sequence.push(event.keyCode.toString());
